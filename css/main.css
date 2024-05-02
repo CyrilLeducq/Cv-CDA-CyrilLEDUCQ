@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "BebasKai";
+  src: url("../font/BebasKai.ttf") format("truetype");
+}
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "BebasKai";
+  font-size: 2rem;
+}
+
+.yellowTitle {
+  color: #ffc107;
+}
+
+li {
+  list-style-type: none;
+}
+
+@media screen and (min-width: 1199px) {
+  body {
+    background: url(../img/fotor-ai-20240502174819.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+    position: relative;
+  }
+  body .feuille {
+    background-color: white;
+    width: 60%;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    position: absolute;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  }
+  body .feuille .headerContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .feuille .headerContainer .avatar {
+    max-width: 20%;
+    height: auto;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-right: 3rem;
+  }
+  body .feuille .headerContainer .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    width: 50%;
+  }
+  body .feuille .headerContainer .title h1 {
+    font-size: 7rem;
+    margin-bottom: 0;
+  }
+  body .feuille .headerContainer .title h3 {
+    font-size: 2rem;
+    margin: 0;
+  }
+  body .feuille .headerContainer .headerLogo {
+    width: 20vh;
+    display: flex;
+    background: linear-gradient(125deg, white 50%, #ffc107 50%);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  body .feuille .headerContainer .headerLogo .logo {
+    max-width: 30%;
+    height: auto;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  body .feuille main {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  body .feuille main .aboutContainer {
+    background-color: #27282e;
+    color: white;
+    width: 25%;
+  }
+  body .feuille main .aboutContainer .content {
+    width: 95%;
+    margin: 0.5rem;
+  }
+  body .feuille main .aboutContainer .content li {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem;
+  }
+  body .feuille main .aboutContainer .content li .icon {
+    width: 1.6rem;
+    margin-right: 0.5rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
