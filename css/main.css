@@ -10,15 +10,28 @@ h1,
 h2,
 h3 {
   font-family: "BebasKai";
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 .yellowTitle {
   color: #ffc107;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 li {
   list-style-type: none;
+}
+
+.icon {
+  width: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
 }
 
 @media screen and (min-width: 1199px) {
@@ -26,15 +39,13 @@ li {
     background: url(../img/fotor-ai-20240502174819.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    z-index: -1;
-    position: relative;
   }
   body .feuille {
     background-color: white;
-    width: 60%;
+    width: 65%;
     margin-left: 30vh;
-    margin-top: 10vh;
-    position: absolute;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
   }
   body .feuille .headerContainer {
@@ -62,6 +73,7 @@ li {
   }
   body .feuille .headerContainer .title h3 {
     font-size: 2rem;
+    font-style: italic;
     margin: 0;
   }
   body .feuille .headerContainer .headerLogo {
@@ -83,23 +95,97 @@ li {
     flex-wrap: wrap;
     width: 100%;
   }
-  body .feuille main .aboutContainer {
+  body .feuille main .aboutContainer,
+  body .feuille main .diplomesContainer,
+  body .feuille main .languesContainer,
+  body .feuille main .hobbiesContainer {
+    width: 25%;
     background-color: #27282e;
     color: white;
-    width: 25%;
   }
-  body .feuille main .aboutContainer .content {
+  body .feuille main .aboutContainer .content,
+  body .feuille main .diplomesContainer .content,
+  body .feuille main .languesContainer .content,
+  body .feuille main .hobbiesContainer .content {
     width: 95%;
     margin: 0.5rem;
   }
-  body .feuille main .aboutContainer .content li {
-    display: flex;
-    align-items: center;
-    margin: 0.5rem;
+  body .feuille main .competencesContainer,
+  body .feuille main .experiencesContainer {
+    width: 75%;
   }
-  body .feuille main .aboutContainer .content li .icon {
-    width: 1.6rem;
-    margin-right: 0.5rem;
+  body .feuille main .competencesContainer {
+    padding: 1.5rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+  body .feuille main .competencesContainer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  body .feuille main .competencesContainer .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .feuille main .competencesContainer .content .tables {
+    width: 100%;
+  }
+  body .feuille main .competencesContainer .content .tables .front,
+  body .feuille main .competencesContainer .content .tables .back,
+  body .feuille main .competencesContainer .content .tables .other {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: solid 2px #ffc107;
+    margin: 1rem 0;
+    padding: 1rem 0;
+    border-radius: 12px;
+  }
+  body .feuille main .diplomesContainer {
+    margin-bottom: 0;
+    margin-top: -60px;
+  }
+  body .feuille main .diplomesContainer .diplome:not(:last-child) {
+    border-bottom: solid 1px #ffc107;
+  }
+  body .feuille main .diplomesContainer .diplomeTitre {
+    display: flex;
+    justify-content: space-between;
+  }
+  body .feuille main .diplomesContainer .diplomeTitre h4 {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  body .feuille main .experiencesContainer h2 {
+    display: flex;
+    justify-content: center;
+  }
+  body .feuille main .experiencesContainer .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body .feuille main .experiencesContainer .content .experienceTitle {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+  }
+  body .feuille main .languesContainer {
+    margin-top: -400px;
+  }
+  body .feuille main .languesContainer .content .langue {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
+  }
+  body .feuille main .languesContainer .content .langue p {
+    margin-bottom: 0.5rem;
+  }
+  body .feuille main .languesContainer .content .hobbie {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
   }
 }
 

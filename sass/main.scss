@@ -13,13 +13,28 @@ h1,
 h2,
 h3 {
   font-family: 'BebasKai';
-  font-size: 2rem;
+  font-size: 3rem;
 }
-.yellowTitle{
+
+.yellowTitle {
   color: v.$color-yellow;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
+
 li {
   list-style-type: none;
+}
+
+.icon {
+  width: 1.6rem;
+  margin-right: 0.5rem;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 0.5rem;
 }
 
 @media screen and (max-width: v.$sm-breakpoint) {}
@@ -31,17 +46,15 @@ li {
     background: url(../img/fotor-ai-20240502174819.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
-    z-index: -1;
-    position: relative;
 
     .feuille {
       background-color: white;
-      width: 60%;
+      width: 65%;
       margin-left: 30vh;
-      margin-top: 10vh;
-      position: absolute;
+      margin-top: 5vh;
+      margin-bottom: 3vh;
       box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-      
+
       .headerContainer {
         display: flex;
         justify-content: space-between;
@@ -69,6 +82,7 @@ li {
 
           h3 {
             font-size: 2rem;
+            font-style: italic;
             margin: 0;
           }
         }
@@ -90,28 +104,124 @@ li {
 
         }
       }
-      main{
+
+      main {
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-.aboutContainer{
-  background-color: v.$color-grey;
-  color: white;
-  width: 25%;
-  .content{
-    width: 95%;
-    margin: 0.5rem;
-    li{
-      display: flex;
-      align-items: center;
-      margin: 0.5rem;
-      .icon {
-        width: 1.6rem;
-        margin-right: 0.5rem;
-      }
-    }
-  }
-}
+
+
+        .aboutContainer,
+        .diplomesContainer,
+        .languesContainer,
+        .hobbiesContainer {
+          width: 25%;
+          background-color: v.$color-grey;
+          color: white;
+
+          .content {
+            width: 95%;
+            margin: 0.5rem;
+          }
+
+        }
+
+        .competencesContainer,
+        .experiencesContainer {
+          width: 75%;
+
+        }
+
+        .competencesContainer {
+          padding: 1.5rem 0;
+          display: flex;
+          flex-direction: column;
+
+          h2 {
+            display: flex;
+            justify-content: center;
+          }
+
+          .content {
+            width: 90%;
+            margin: 0 auto;
+
+            .tables {
+              width: 100%;
+
+              .front,
+              .back,
+              .other {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border: solid 2px v.$color-yellow;
+                margin: 1rem 0;
+                padding: 1rem 0;
+                border-radius: 12px;
+              }
+            }
+          }
+        }
+
+        .diplomesContainer {
+          margin-bottom: 0;
+          margin-top: -60px;
+
+          .diplome:not(:last-child) {
+            border-bottom: solid 1px v.$color-yellow;
+          }
+
+          .diplomeTitre {
+            display: flex;
+            justify-content: space-between;
+
+            h4 {
+              font-size: 1rem;
+              text-transform: uppercase;
+              margin-top: 1rem;
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        .experiencesContainer {
+          h2 {
+            display: flex;
+            justify-content: center;
+          }
+
+          .content {
+            width: 90%;
+            margin: 0 auto;
+
+            .experienceTitle {
+              display: flex;
+              justify-content: space-between;
+              text-transform: uppercase;
+            }
+          }
+        }
+
+        .languesContainer {
+          margin-top: -400px;
+
+          .content {
+            .langue {
+              display: flex;
+              justify-content: space-between;
+              margin-bottom: 0;
+              p{
+                margin-bottom: 0.5rem;
+              }
+            }
+            .hobbie{
+              display: flex;
+              justify-content: space-evenly;
+              margin-bottom: 1rem;
+            }
+          }
+        }
       }
     }
   }
