@@ -37,7 +37,7 @@ li {
   margin: 0.5rem;
 }
 
-@media screen and (min-width: v.$xs-breakpoint) {
+@media screen and (max-width: v.$md-breakpoint) {
   body {
     margin: 0;
     padding: 0;
@@ -54,7 +54,7 @@ li {
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   h3 {
